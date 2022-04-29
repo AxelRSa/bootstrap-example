@@ -1,0 +1,17 @@
+// varaibles
+@import "../scss/variables/colors.scss";
+@import "../scss/variables/responsive.scss";
+
+//utilities
+@import "../scss/utilities/font-sizes";
+@import "../scss/utilities/white-space";
+@import "../scss/utilities/scrollbar";
+
+// pages
+@import "../scss/pages/index.scss";
+
+// components
+@import "../scss/components/button.scss";
+@import "../scss/components/navbar";
+@import "../scss/components/container.scss";
+@import "../scss/components/card.scss";

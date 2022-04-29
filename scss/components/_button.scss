@@ -1,0 +1,71 @@
+/* 
+
+table of content
+
+btn--primary-yellow
+btn--rounded
+btn--animation-backgroud
+
+*/
+
+/* 
+btn--primary-yellow
+*/
+
+.btn--primary-yellow{
+	background-color: var(--yellow-primary);
+	border: 1px solid var(--yellow-primary);
+
+	&:hover{
+		background-color: var(--yellow-primary);
+		border: 1px solid var(--yellow-primary);
+	}
+
+	&:active{
+		background-color: var(--yellow-primary) !important;
+		border: 1px solid var(--yellow-primary) !important;
+	}
+}
+
+/* 
+btn--animation-backgroud
+*/
+
+.btn--animation-backgroud {
+  position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		border-radius: 40px;
+		opacity: 0;
+		transition: all 0.3s ease;
+		transform: scale(0);
+		background: rgba(0, 0, 0, 0.05);
+	}
+
+	&:hover::before {
+		height: 100%;
+		width: 100%;
+		border-radius: 40px;
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+/* 
+btn--active-backgroud
+*/
+.btn--active-backgroud{
+	&::before {
+		height: 100%;
+		width: 100%;
+		border-radius: 40px;
+		transform: scale(1);
+		opacity: 1;
+	}
+}
